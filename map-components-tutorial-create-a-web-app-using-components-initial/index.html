@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:;base64,=" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArcGIS Maps SDK for JavaScript Tutorials: Create a web app using components</title>
+  </head>
+  <body>
+    <calcite-shell>
+      <calcite-navigation slot="header">
+        <calcite-navigation-logo slot="logo"></calcite-navigation-logo>
+      </calcite-navigation>
+    </calcite-shell>
+    <calcite-dropdown width="m">
+      <calcite-button slot="trigger">Select landform</calcite-button>
+      <calcite-dropdown-group group-title="Natural places">
+          <calcite-dropdown-item>Mountain</calcite-dropdown-item>
+          <calcite-dropdown-item>River</calcite-dropdown-item>
+          <calcite-dropdown-item>Waterfall</calcite-dropdown-item>
+          <calcite-dropdown-item>Rainforest</calcite-dropdown-item>
+          <calcite-dropdown-item>Tundra</calcite-dropdown-item>
+          <calcite-dropdown-item>Desert</calcite-dropdown-item>
+      </calcite-dropdown-group>
+    </calcite-dropdown>
+    <arcgis-map item-id="e691172598f04ea8881cd2a4adaa45ba" zoom="4">
+      <arcgis-layer-list position="top-right"></arcgis-layer-list>
+    </arcgis-map>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
